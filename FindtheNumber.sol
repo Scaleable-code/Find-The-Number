@@ -50,3 +50,4 @@ contract GuessTheNumber {
         emit GameRestarted(_newSecretNumber);
     }
 }
+
