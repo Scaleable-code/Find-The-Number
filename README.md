@@ -5,7 +5,7 @@ Guess The Number est un jeu décentralisé où chaque joueur a une seule chance 
 
 Règles du jeu :
 
-Une seule tentative par joueur – Choisissez votre chiffre, et c'est tout !
+Une seule tentative par joueur – Choisissez votre chiffre entre 1 et 10, c'est tout !
 
 Le jeu se termine dès qu'un joueur devine le bon nombre 🔥.
 
