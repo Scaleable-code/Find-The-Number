@@ -9,8 +9,6 @@ Une seule tentative par joueur – Choisissez votre chiffre entre 1 et 10, c'est
 
 Le jeu se termine dès qu'un joueur devine le bon nombre 🔥.
 
-Si personne ne trouve la bonne réponse, la partie se termine après que tous les joueurs aient tenté leur chance. ⏳
-
 L'administrateur peut relancer le jeu avec un nouveau nombre secret 🔄.
 
 🔑 Contract Address :
