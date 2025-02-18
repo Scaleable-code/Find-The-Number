@@ -33,6 +33,7 @@
             border-radius: 8px;
             color: #34495E; /* Dark gray text for better readability */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center the text */
         }
 
         .game-rules ul {
@@ -58,6 +59,7 @@
             border-radius: 10px;
             margin-top: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center the content */
         }
 
         /* Card style for the wallet connection */
@@ -67,6 +69,8 @@
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
+            display: inline-block; /* Ensure it doesn't take full width */
+            text-align: center; /* Center the text inside cards */
         }
 
         /* Button style */
@@ -89,6 +93,13 @@
             background-color: #F4F6F6; /* Very light gray-blue */
             font-family: 'Orbitron', sans-serif;
             color: #2C3E50; /* Dark gray text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center everything horizontally */
+            justify-content: center; /* Center everything vertically */
+            height: 100vh;
         }
 
         /* Header styling */
@@ -97,6 +108,7 @@
             color: white;
             padding: 20px;
             text-align: center;
+            width: 100%; /* Ensure the header spans full width */
         }
 
         header h1 {
@@ -105,9 +117,24 @@
         }
 
         /* Footer section styling */
+        footer {
+            text-align: center; /* Center the footer text */
+            margin-top: 20px;
+            padding: 10px;
+        }
+
         footer p {
             color: #5DADE2; /* Light blue color for footer text */
             font-size: 1em;
+        }
+
+        footer a {
+            color: #5DADE2; /* Soft blue color */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -157,4 +184,5 @@
 
     <script src="app.js"></script>
 </body>
-</html
+</html>
+
