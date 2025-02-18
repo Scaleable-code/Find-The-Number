@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+    <style>
+        /* Custom style for the contract link */
+        .contract-info a {
+            color: #5DADE2; /* Soft blue color */
+            text-decoration: none;
+        }
+
+        .contract-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Style for the contract address text */
+        .contract-info p {
+            color: #1F3A64; /* Darker blue for better visibility */
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* Style for the game rules section */
+        .game-rules {
+            background-color: #F2F4F4; /* Light grey with a hint of blue */
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            color: #34495E; /* Dark gray text for better readability */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .game-rules ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .game-rules li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .game-rules h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #34495E; /* Dark gray for the title */
+        }
+
+        /* Updated background for the game container */
+        .game-section {
+            background-color: #E1F5FE; /* Light blue background */
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Card style for the wallet connection */
+        .card {
+            background-color: #D5DBDB; /* Light grey with subtle blue tint */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Button style */
+        button {
+            background-color: #2980B9; /* Deep blue */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+
+        button:hover {
+            background-color: #1F618D; /* Slightly darker blue */
+        }
+
+        /* General page background */
+        body {
+            background-color: #F4F6F6; /* Very light gray-blue */
+            font-family: 'Orbitron', sans-serif;
+            color: #2C3E50; /* Dark gray text */
+        }
+
+        /* Header styling */
+        header {
+            background-color: #2980B9; /* Deep blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        /* Footer section styling */
+        footer p {
+            color: #5DADE2; /* Light blue color for footer text */
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="overlay"></div>
+        <h1>🎲 Guess The Number Game 🎲</h1>
+    </header>
+
+    <!-- Game Rules Section (moved higher) -->
+    <section class="game-rules">
+        <h2>Game Rules</h2>
+        <ul>
+            <li>🎯 <strong>One attempt per player</strong> – Just choose your number between 1 and 10!</li>
+            <li>🔥 <strong>The game ends</strong> as soon as a player guesses the correct number!</li>
+            <li>🔄 <strong>The administrator</strong> can restart the game with a new secret number.</li>
+        </ul>
+    </section>
+
+    <!-- Game Container -->
+    <main>
+        <section class="game-section">
+            <div class="card">
+                <h2>Connect Your Wallet</h2>
+                <button id="connectButton" onclick="connectWallet()">Connect Wallet</button>
+                <p id="account"></p>
+            </div>
+
+            <div class="card" id="game" style="display:none;">
+                <h2>Enter Your Guess</h2>
+                <p>Pick a number between 1 and 10</p>
+                <input type="number" id="guessedNumber" min="1" max="10">
+                <button onclick="submitGuess()">Submit</button>
+                <p id="guessResult"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Guess The Number Game. All rights reserved.</p>
+        <p>🔑 Contract Address on basescan: <a href="https://basescan.org/address/0xb94ca9DB29631AC698ab2c9beb30afbEA7Fc1a42#writeContract" target="_blank">0xb94ca9DB29631AC698ab2c9beb30afbEA7Fc1a42</a></p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
