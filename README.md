@@ -1,7 +1,7 @@
 # Find-The-Number on BASE
 
 🎲 Guess The Number 🎲
-Guess The Number est un jeu décentralisé où chaque joueur a une seule chance de deviner le nombre secret entre 1 et 10. 📊
+Guess The Number est un jeu décentralisé où chaque joueur a une seule chance de deviner le nombre secret entre 1 et 10. 
 
 Règles du jeu :
 
