@@ -1,3 +1,5 @@
+WE ARE BASED
+
 # Find-The-Number on BASE
 
 🎲 Guess The Number 🎲
